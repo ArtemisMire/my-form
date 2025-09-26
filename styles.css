@@ -6,9 +6,12 @@ body {
     font-family: Inter;
     margin: 18px;
     display: flex;
-    height: 100vh;
-    margin: 0px;
-    font-size: 18px;
+    min-height: 100vh;
+    margin: 0;
+    font-size: clamp(14px, 20px, 20px);
+}
+p {
+    margin: 3vh 0
 }
 #image-cont {
     padding-top: 200px;
@@ -23,11 +26,11 @@ body {
     justify-content: center;
     height: clamp(5vh, 15vh, 15vh);
     padding: 12px;
-
+    position:static;
 }
 #logo-text {
     font-family: "Norse-Bold";
-    font-size: clamp(30px, 120px, 120px);
+    font-size: clamp(8vh, 15vh, 15vh);
     color: white;
     margin: 0px;
     display: flex;
@@ -38,21 +41,28 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto 0;
+    padding: 3vh 0;
     flex: 1;
-    }
+}
 #information {
     font-size: clamp(0.5em, 1.5em, 2em);
     font-weight: 600;
     max-width: 770px;
-    padding: 0 3vw;
+    padding: 0 3vw;   
 }
+
 form {
-    padding-top: 38px;
+    padding-top: 32px;
+}
+#cont-for-shadow {
+    box-shadow: 0 3px 16px -10px;
+
 }
 #form-name {
     font-size: clamp(0.5em, 1.5em, 2em);
     font-weight: 500;
-    padding: 0 3vw;
+    margin: 0;
+    padding: 27px 3vw;
 }
 .input-cont {
     display: flex;
@@ -82,9 +92,11 @@ form {
     box-shadow: 2px 2px 6px rgb(33 33 33 / 25%);
 }
 .input-cont input[type="password"] {
-    border: 2px solid rgba(255, 94, 0, 0.521);
+    border: 2px solid rgba(255, 8, 0, 0.425);
 }
-
+.input-cont input[type="password"]:focus {
+    border: 2px solid rgba(255, 0, 0, 0.705);
+}
 #inputs {
     text-wrap: nowrap;
     display: flex;
@@ -102,7 +114,6 @@ form {
 #continue-cont {
     padding: 36px 3vw;
     padding-bottom: 12px;
-    box-shadow: 0px -6px 18px -13px;
 }
 #continue-cont button {
     -webkit-appearance: none;
@@ -112,7 +123,7 @@ form {
     font-size: 1em;
     font-weight: 600;
     color: white;
-    background-color: #596D48;
+    background-color: #536840;
     padding: 22px 48px;
     box-shadow: 4px 4px 12px -6px rgb(33 33 33);
     opacity: 0.95;

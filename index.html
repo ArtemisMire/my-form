@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="icon" href="./resource/happy.png"> <!Smile icons created by Freepik - Flaticon>
+  <title>My form</title>
 </head>
 <body>
   <div id="image-cont">
@@ -28,38 +29,40 @@
       </p>
     </div>
     <form>
-      <p id="form-name">
-        Let's do this!
-      </p>
-      <div id="inputs">
-        <div id="first-line" class="line">
-          <div class="input-cont">
-            <label for="firstName">FIRST NAME</label>
-            <input name="firstName" type="text" required>
+      <div id="cont-for-shadow">
+        <p id="form-name">
+          Let's do this!
+        </p>
+        <div id="inputs">
+          <div id="first-line" class="line">
+            <div class="input-cont">
+              <label for="firstName">FIRST NAME</label>
+              <input name="firstName" type="text" required>
+            </div>
+            <div class="input-cont">
+              <label for="lastName">LAST NAME</label>
+              <input name="lastName" type="text" required>
+            </div>
           </div>
-          <div class="input-cont">
-            <label for="lastName">LAST NAME</label>
-            <input name="lastName" type="text" required>
+          <div id="second-line" class="line">
+            <div class="input-cont">
+              <label for="email">EMAIL</label>
+              <input name="email" type="email" required>
+            </div>
+            <div class="input-cont">
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input name="phoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            </div>
           </div>
-        </div>
-        <div id="second-line" class="line">
-          <div class="input-cont">
-            <label for="email">EMAIL</label>
-            <input name="email" type="email" required>
-          </div>
-          <div class="input-cont">
-            <label for="phoneNumber">PHONE NUMBER</label>
-            <input name="phoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
-          </div>
-        </div>
-        <div id="third-line" class="line">
-          <div class="input-cont">
-            <label for="password">PASSWORD</label>
-            <input name="password" type="password" required>
-          </div>
-          <div class="input-cont">
-            <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input name="confirmPassword" type="password" required>
+          <div id="third-line" class="line">
+            <div class="input-cont">
+              <label for="password">PASSWORD</label>
+              <input name="password" type="password" required>
+            </div>
+            <div class="input-cont">
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input name="confirmPassword" type="password" required>
+            </div>
           </div>
         </div>
       </div>
