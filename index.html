@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div id="image-cont">
+    <div id="logo-cont">
+      <img id="logo" src="/resource/odin-lined.png"/>
+      <p id="logo-text" translate="no">ODIN</p>
+    </div>
+  </div>
+  <div id="content">  
+    <div id="information">
+      <p id="about-form" class="info-text">
+        This is not a real online service! You know you need something
+        like this in your life to help you realize your deepest dreams. 
+        Sign up <i>now</i> to get started
+      </p>
+      <p id="sub-about-form" class="info-text">
+        You <i>know</i> you want to.
+      </p>
+    </div>
+    <form>
+      <p id="form-name">
+        Let's do this!
+      </p>
+      <div id="inputs">
+        <div id="first-line" class="line">
+          <div class="input-cont">
+            <label for="firstName">FIRST NAME</label>
+            <input name="firstName" type="text" required>
+          </div>
+          <div class="input-cont">
+            <label for="lastName">LAST NAME</label>
+            <input name="lastName" type="text" required>
+          </div>
+        </div>
+        <div id="second-line" class="line">
+          <div class="input-cont">
+            <label for="email">EMAIL</label>
+            <input name="email" type="email" required>
+          </div>
+          <div class="input-cont">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input name="phoneNumber" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+          </div>
+        </div>
+        <div id="third-line" class="line">
+          <div class="input-cont">
+            <label for="password">PASSWORD</label>
+            <input name="password" type="password" required>
+          </div>
+          <div class="input-cont">
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input name="confirmPassword" type="password" required>
+          </div>
+        </div>
+      </div>
+      <div id="continue-cont">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
